@@ -8,15 +8,12 @@ import Board from "./components/board"
 // State: Trạng thái - Bộ nhớ của component, Quyết định component được hiển thị như thế nào
 
 const App = () => {
-    const reload = () => {
-        window.location.reload()
-    }
+
     return <div className="h-[100vh] flex justify-center items-center">
         <Board>
 
         </Board>
 
-        <button onClick={reload} className="reload">relload</button>
     </div>
 }
 

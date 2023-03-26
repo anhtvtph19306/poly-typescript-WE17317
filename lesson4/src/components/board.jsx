@@ -37,11 +37,14 @@ const Board = ({ children }) => {
         }
         return null
     }
+    const reload = () => {
+        window.location.reload()
+    }
 
-    return <>
-        <h2>Winner is: {checkWinner()}</h2>
+    return <div className="">
+        <h2 className="">Winner is: {checkWinner()}</h2>
 
-        <div className="grid grid-cols-3 gap-3">
+        <div className="box-content grid grid-cols-3 gap-3 m-3">
             <Square value={game[0]} position={0} handlePlay={handlePlay} />
             <Square value={game[1]} position={1} handlePlay={handlePlay} />
             <Square value={game[2]} position={2} handlePlay={handlePlay} />
@@ -52,7 +55,9 @@ const Board = ({ children }) => {
             <Square value={game[7]} position={7} handlePlay={handlePlay} />
             <Square value={game[8]} position={8} handlePlay={handlePlay} />
         </div>
-    </>
+        <button onClick={reload} className="reload">relload</button>
+
+    </div>
 }
 
 export default Board
