@@ -16,7 +16,7 @@ const App = () => {
 
         </Board>
 
-        <br /><button onClick={reload} className="reload">relload</button>
+        <button onClick={reload} className="reload">relload</button>
     </div>
 }
 

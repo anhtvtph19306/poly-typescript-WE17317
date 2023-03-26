@@ -40,6 +40,7 @@ const Board = ({ children }) => {
 
     return <>
         <h2>Winner is: {checkWinner()}</h2>
+
         <div className="grid grid-cols-3 gap-3">
             <Square value={game[0]} position={0} handlePlay={handlePlay} />
             <Square value={game[1]} position={1} handlePlay={handlePlay} />
