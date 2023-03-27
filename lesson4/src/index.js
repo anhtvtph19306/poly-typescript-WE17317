@@ -2,6 +2,7 @@
 import React, {StrictMode} from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './app'
+import App2 from './app'
 // Bước 2: Khai báo DOM root
 const root = document.querySelector("#root")
 // Bước 3: Khởi tạo DOM ảo
@@ -10,6 +11,7 @@ const reactRoot = ReactDOM.createRoot(root)
 reactRoot.render(
     <StrictMode>
         <App/>
+        
     </StrictMode>
 )
 

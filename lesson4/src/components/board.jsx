@@ -35,14 +35,14 @@ const Board = ({ children }) => {
                 return game[p1]
             }
         }
-        return null
+
     }
     const reload = () => {
         window.location.reload()
     }
 
     return <div className="">
-        <h2 className="">Winner is: {checkWinner()}</h2>
+        <h1 className="">Winner is: {checkWinner()}</h1>
 
         <div className="box-content grid grid-cols-3 gap-3 m-3">
             <Square value={game[0]} position={0} handlePlay={handlePlay} />
