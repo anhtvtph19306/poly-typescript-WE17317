@@ -38,7 +38,7 @@ const Board = ({ children }) => {
 
     }
     const reload = () => {
-        window.location.reload()
+        setGame([null, null, null, null, null, null, null, null, null])
     }
 
     return <div className="">
