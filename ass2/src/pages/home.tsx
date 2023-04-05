@@ -15,7 +15,7 @@ const Home = () => {
         fetchProducts()
     },[])
     return <div>
-        <h1 className="text-red-600">Sản phẩm nổi bật</h1>
+        <h1 className="text-black-600"><b>SẢN PHẨM NỔI BẬT</b></h1>
         <div className="grid grid-cols-4 gap-3">
     {products.map(product=><Product data={product} key={product.id}/>)}
         </div>
