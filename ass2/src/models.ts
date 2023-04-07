@@ -4,7 +4,13 @@ export interface IProduct {
     price: number,
     original_price: number,
     description: string,
-    images: {base_url: string}[],
+    images: {
+        base_url: string,
+        large_url:string,
+        medium_url:string,
+        small_url:string,
+        thumbnail_url:string
+    }[],
     brand: {
         id: number,
         name: string,

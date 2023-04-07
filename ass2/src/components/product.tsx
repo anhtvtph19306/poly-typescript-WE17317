@@ -9,7 +9,7 @@ const VND = new Intl.NumberFormat('vi-VN', {
     currency: 'VND',
 });
 const Product = ({data}:Props) => {
-    return <Link to={`product/${data.id}`} className="block">
+    return <Link to={`/product/${data.id}`} className="block">
         <img
             alt="Art"
             src={data.images?.[0].base_url}
@@ -17,11 +17,11 @@ const Product = ({data}:Props) => {
         />
 
         <h3 className="mt-4 text-lg font-bold text-gray-900 sm:text-xl">
-            {VND.format(data.name)}
+            {data.name}
         </h3>
 
         <h4 className="mt-4 text-lg font-bold text-red-600 sm:text-xl">
-            {data.price}
+            {VND.format(data.price)}
         </h4>
 
         <p className="mt-2 max-w-sm text-gray-700">
