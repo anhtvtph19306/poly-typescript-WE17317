@@ -1,14 +1,14 @@
 import { IProduct } from "../models";
 import { Link } from "react-router-dom";
 
-type Props ={
+type Props = {
     data: IProduct
 }
 const VND = new Intl.NumberFormat('vi-VN', {
     style: 'currency',
     currency: 'VND',
 });
-const Product = ({data}:Props) => {
+const Product = ({ data }: Props) => {
     return <Link to={`/product/${data.id}`} className="block">
         <img
             alt="Art"
@@ -23,9 +23,11 @@ const Product = ({data}:Props) => {
         <h4 className="mt-4 text-lg font-bold text-red-600 sm:text-xl">
             {VND.format(data.price)}
         </h4>
-
+        <p className="mt-2 max-w-sm text-gray-400">
+            {VND.format(data.original_price)}
+        </p>
         <p className="mt-2 max-w-sm text-gray-700">
-            {data.description.substring(0,70)}
+            {data.description.substring(0, 70)}
         </p>
     </Link>
 }
