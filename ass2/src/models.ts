@@ -40,3 +40,11 @@ export const singupSchema = Yup.object({
   })
   
  export type SingupForm = Yup.InferType<typeof singupSchema>
+
+ export const singinSchema = Yup.object({
+    email: Yup.string().email("Email sai định dạng").required("Trường dữ liệu bắt buộc"),
+    password: Yup.string().min(6).required("Trường dữ liệu bắt buộc"),
+ })
+
+ export type SinginForm = Yup.InferType<typeof singinSchema>
+ 

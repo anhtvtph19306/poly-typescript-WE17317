@@ -7,6 +7,22 @@
       "lastName": "Tiến Anh",
       "confirmPassword": "12345678",
       "id": 1
+    },
+    {
+      "email": "anh.130td1@gmail.com",
+      "password": "$2a$10$FecyynimF7/hmrcREZ0NLuW96IW4xwvCK8RPyfE1OCvVef2IzLyJq",
+      "firstName": "Tiến",
+      "lastName": "Anh",
+      "confirmPassword": "12345678",
+      "id": 2
+    },
+    {
+      "email": "anh.130td2@gmail.com",
+      "password": "$2a$10$J/pcxbUUBDXCvQ1TzVqlLeQKc3tfooUwLuDyH.Dit5UwbxkPe1vr.",
+      "firstName": "Tiến",
+      "lastName": "Anh",
+      "confirmPassword": "12345678",
+      "id": 3
     }
   ],
   "products": [

@@ -15,14 +15,17 @@ const Singup = () => {
     resolver: yupResolver(singupSchema)
   })
 
+  const navigate = useNavigate()
+
   const onSubmit = async (data: SingupForm) => {
     try {
       const response = await singup(data)
       console.log(response);
-      
+      navigate('/singin')
+
     } catch (err) {
       console.log(err);
-      
+
     }
 
   }
