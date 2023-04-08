@@ -6,22 +6,22 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as Yup from "yup";
 import { useNavigate } from "react-router-dom";
-import { SingupForm, singupSchema } from "../models";
-import { singup } from "../API/auth";
+import { SignupForm, signupSchema } from "../models";
+import { signup } from "../API/auth";
 
 
-const Singup = () => {
-  const { register, handleSubmit, formState: { errors } } = useForm<SingupForm>({
-    resolver: yupResolver(singupSchema)
+const Signup = () => {
+  const { register, handleSubmit, formState: { errors } } = useForm<SignupForm>({
+    resolver: yupResolver(signupSchema)
   })
 
   const navigate = useNavigate()
 
-  const onSubmit = async (data: SingupForm) => {
+  const onSubmit = async (data: SignupForm) => {
     try {
-      const response = await singup(data)
+      const response = await signup(data)
       console.log(response);
-      navigate('/singin')
+      navigate('/signin')
 
     } catch (err) {
       console.log(err);
@@ -138,7 +138,6 @@ const Singup = () => {
                 <input
                   type="password"
                   {...register('confirmPassword')}
-
                   className="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
                 />
                 <p className="text-red-600 text-[10px]">{errors.confirmPassword && errors.confirmPassword.message}</p>
@@ -164,4 +163,4 @@ const Singup = () => {
 
   </>
 }
-export default Singup;
+export default Signup;

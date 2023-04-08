@@ -31,7 +31,7 @@ export interface ISpecification {
 }
 
 
-export const singupSchema = Yup.object({
+export const signupSchema = Yup.object({
     firstName: Yup.string().required("Trường dữ liệu bắt buộc"),
     lastName: Yup.string().required("Trường dữ liệu bắt buộc"),
     email: Yup.string().email("Email sai định dạng").required("Trường dữ liệu bắt buộc"),
@@ -39,12 +39,12 @@ export const singupSchema = Yup.object({
     confirmPassword: Yup.string().oneOf([Yup.ref('password')], "Mật khẩu không khớp"),
   })
   
- export type SingupForm = Yup.InferType<typeof singupSchema>
+ export type SignupForm = Yup.InferType<typeof signupSchema>
 
- export const singinSchema = Yup.object({
+ export const signinSchema = Yup.object({
     email: Yup.string().email("Email sai định dạng").required("Trường dữ liệu bắt buộc"),
     password: Yup.string().min(6).required("Trường dữ liệu bắt buộc"),
  })
 
- export type SinginForm = Yup.InferType<typeof singinSchema>
+ export type SigninForm = Yup.InferType<typeof signinSchema>
  

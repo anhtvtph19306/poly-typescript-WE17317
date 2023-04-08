@@ -14,8 +14,8 @@ function App() {
 
   return <BrowserRouter>
     <Routes>
-      <Route path='/singup' element={<Singup />} />
-      <Route path='/singin' element={<Singin />} />
+      <Route path='/signup' element={<Singup />} />
+      <Route path='/signin' element={<Singin />} />
 
       <Route path='/' element={<UserLayout />}> {/* Layout */}
         <Route index element={<Home />} />

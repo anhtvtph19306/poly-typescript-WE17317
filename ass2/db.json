@@ -23,6 +23,14 @@
       "lastName": "Anh",
       "confirmPassword": "12345678",
       "id": 3
+    },
+    {
+      "email": "anh.130td3@gmail.com",
+      "password": "$2a$10$p8i6U.HCt/BwnPqhXe6n4eQhrbRCUgUEMXSysXNfLemRwXcOjFXZy",
+      "firstName": "tien",
+      "lastName": "anh",
+      "confirmPassword": "12345678",
+      "id": 4
     }
   ],
   "products": [
