@@ -1,13 +1,7 @@
 const UserFooter = () => {
   return <>
     <footer aria-label="Site Footer" className="bg-white lg:grid lg:grid-cols-5 my-10">
-      <div className="relative block h-32 lg:col-span-2 lg:h-full">
-        <img
-          src="https://images.unsplash.com/photo-1642370324100-324b21fab3a9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80"
-          alt=""
-          className="absolute inset-0 object-cover w-full h-full"
-        />
-      </div>
+
 
       <div className="px-4 py-16 sm:px-6 lg:col-span-3 lg:px-8">
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
@@ -21,7 +15,7 @@ const UserFooter = () => {
                 href="#"
                 className="block text-2xl font-medium text-gray-900 hover:opacity-75 sm:text-3xl"
               >
-                0941601023
+                0123456789
               </a>
             </p>
 
@@ -60,21 +54,21 @@ const UserFooter = () => {
 
                   <li>
                     <a href="#" className="text-gray-700 transition hover:opacity-75">
-                    Gọi mua hàng : 1800.2063 (8h00 - 22h00)
+                      Gọi mua hàng : 1800.2063 (8h00 - 22h00)
                     </a>
                   </li>
 
                   <li>
                     <a href="#" className="text-gray-700 transition hover:opacity-75">
-                    Gọi khiếu nại : 1800.2044 (8h00 - 21h30)
+                      Gọi khiếu nại : 1800.2044 (8h00 - 21h30)
                     </a>
                   </li>
 
                   <li>
                     <a href="#" className="text-gray-700 transition hover:opacity-75">
-                    Gọi bảo hành : 1800.2064 (8h00 - 21h00)                      
+                      Gọi bảo hành : 1800.2064 (8h00 - 21h00)
                     </a>
-                  </li>                  
+                  </li>
                 </ul>
               </nav>
               <p className="font-medium text-gray-900 my-3">Trung Tâm bảo hành</p>
@@ -106,37 +100,37 @@ const UserFooter = () => {
 
                   <li>
                     <a href="#" className="text-gray-700 transition hover:opacity-75">
-                    Tra điểm Smember
+                      Tra điểm Smember
                     </a>
                   </li>
 
                   <li>
                     <a href="#" className="text-gray-700 transition hover:opacity-75">
-                    Tra thông tin bảo hành
+                      Tra thông tin bảo hành
                     </a>
                   </li>
 
                   <li>
                     <a href="#" className="text-gray-700 transition hover:opacity-75">
-                    Tra cứu hoá đơn VAT điện tử
+                      Tra cứu hoá đơn VAT điện tử
                     </a>
                   </li>
 
                   <li>
                     <a href="#" className="text-gray-700 transition hover:opacity-75">
-                    Trung tâm bảo hành chính hãng
+                      Trung tâm bảo hành chính hãng
                     </a>
                   </li>
 
                   <li>
                     <a href="#" className="text-gray-700 transition hover:opacity-75">
-                    Quy định về việc sao lưu dữ liệu
+                      Quy định về việc sao lưu dữ liệu
                     </a>
                   </li>
 
                   <li>
                     <a href="#" className="text-gray-700 transition hover:opacity-75">
-                    Dịch vụ bảo hành điện thoại
+                      Dịch vụ bảo hành điện thoại
                     </a>
                   </li>
                 </ul>
