@@ -6,24 +6,24 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as Yup from "yup";
 import { useNavigate } from "react-router-dom";
-import { SinginForm, SingupForm, singinSchema, singupSchema } from "../models";
-import { singin, singup } from "../API/auth";
+import { SigninForm, SignupForm, signinSchema, signupSchema } from "../models";
+import { signin, signup } from "../API/auth";
 import { useLocalStorage } from "../hooks";
 
 
 
-const Singin = () => {
-    const { register, handleSubmit, formState: { errors } } = useForm<SinginForm>({
-        resolver: yupResolver(singinSchema)
+const Signin = () => {
+    const { register, handleSubmit, formState: { errors } } = useForm<SigninForm>({
+        resolver: yupResolver(signinSchema)
     })
 
     const [user, setUser] = useLocalStorage("user", null)
 
     const navigate = useNavigate()
 
-    const onSubmit = async (data: SinginForm) => {
+    const onSubmit = async (data: SigninForm) => {
         try {
-            const { data: { accessToken, user } } = await singin(data)
+            const { data: { accessToken, user } } = await signin(data)
             setUser({
                 accessToken,
                 ...user
@@ -122,4 +122,4 @@ const Singin = () => {
 
     </>
 }
-export default Singin;
+export default Signin;
