@@ -7,6 +7,7 @@ import Signup from './pages/signup'
 import Signin from './pages/signin'
 import AdminLayout from './components/layout/admin'
 import Dashboard from './pages/dashboard'
+import ProductUpdate from './pages/product-update'
 
 
 
@@ -21,8 +22,9 @@ function App() {
         <Route index element={<Home />} />
         <Route path='product/:id' element={<ProductDetail />} />
       </Route>
-      <Route path='/admin' element={<AdminLayout/>}>
-        <Route index element={<Dashboard/>} />
+      <Route path='/admin' element={<AdminLayout />}>
+        <Route index element={<Dashboard />} />
+        <Route path='product/:id' element={<ProductUpdate />} />
       </Route>
     </Routes>
   </BrowserRouter>

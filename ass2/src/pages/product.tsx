@@ -116,7 +116,7 @@ const ProductDetail = () => {
                     <div className="lg:col-span-3">
                         <div className="prose max-w-none">
                             <p>
-                                {product.description}
+                                <div className="" dangerouslySetInnerHTML={{ __html: product.description }}></div>
                             </p>
                         </div>
                     </div>

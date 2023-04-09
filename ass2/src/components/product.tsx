@@ -27,7 +27,7 @@ const Product = ({ data }: Props) => {
             {VND.format(data.original_price)}
         </p>
         <p className="mt-2 max-w-sm text-gray-700">
-            {data.description.substring(0, 70)}
+            <div className="" dangerouslySetInnerHTML={{ __html: data.description.substring(0, 70) }}></div>
         </p>
     </Link>
 }
